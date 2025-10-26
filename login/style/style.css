@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #242424;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.card-login{
+    width: 450px;
+    height: 500px;
+    background-color: #333;
+    margin-top: 10%;
+    border-radius: 15px;
+    border: 3px solid #f20000;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4), 0 0 10px rgba(255, 0, 0, 0.2);
+
+}
+
+h1{
+    font-size: 40px;
+    font-family: "poppins", sans-serif;
+    color: #f20000;
+    padding: 30px;
+}
+
+input{
+    width: 95%;
+    height: 60px;
+    padding: 10px;
+    margin-top: 25px;
+    border-radius: 15px;
+    border: 2px solid #f20000;
+    background-color: #3a3a3a;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.email{
+    margin-top: 0;
+}
+
+button{
+    width: 90%;
+    height: 50px;
+    border-radius: 20px;
+    margin-top: 10px;
+    background-color: #f20000;
+    font-size: 18px;
+    font-family: "arial", sans-serif;
+    color: #ffffff;
+    border: none;
+}
+
+p{
+    font-size: 20px;
+    font-family: "poppins", sans-serif;
+    color: #ffffff;
+    opacity: 80%;
+    padding: 20px;
+    
+}
+
+a{
+  color: #f20000;  
+  text-decoration: none;
+}
+
+.btn{
+    color: #ffffff;
+}
