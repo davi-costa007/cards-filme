@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #242424;
+    background-color: #121212;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -14,9 +14,9 @@ body{
 
 .card-login{
     width: 450px;
-    height: 500px;
+    height: 560px;
     background-color: #333;
-    margin-top: 10%;
+    margin-top: 8%;
     border-radius: 15px;
     border: 3px solid #f20000;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4), 0 0 10px rgba(255, 0, 0, 0.2);
@@ -32,7 +32,7 @@ h1{
 
 input{
     width: 95%;
-    height: 60px;
+    height: 50px;
     padding: 10px;
     margin-top: 25px;
     border-radius: 15px;
@@ -74,4 +74,18 @@ a{
 
 .btn{
     color: #ffffff;
+}
+
+.ou{
+    font-size: 18px;
+    font-family: "poppins", sans-serif;
+    color: #ffffff;
+    padding: 10px;
+    margin-top: -2px;
+}
+
+img{
+    padding: 3px;
+    align-items: center;
+    justify-content: center;
 }

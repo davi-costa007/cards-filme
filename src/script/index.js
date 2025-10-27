@@ -12,7 +12,6 @@ const filmes = [
   { nome: "A Escolha Perfeita", genero: "comedia", avaliacao: "4.9", imagem: "src/img/baner10.webp" },
 
   //romance
-
   { nome: "Titanic", genero: "romance", avaliacao: "5.0", imagem: "src/img3/baner-romance1.webp" },
   { nome: "Diário de uma Paixão", genero: "romance", avaliacao: "4.9", imagem: "src/img3/baner-romance2.webp" },
   { nome: "Como Era Antes de Você", genero: "romance", avaliacao: "4.8", imagem: "src/img3/baner-romance3.webp" },
@@ -24,8 +23,7 @@ const filmes = [
   { nome: "Para Sempre", genero: "romance", avaliacao: "4.6", imagem: "src/img3/baner-romance9.webp" },
   { nome: "Simplesmente Amor", genero: "romance", avaliacao: "4.5", imagem: "src/img3/baner-romance10.webp" },
 
-   //ação
-
+  //ação
   { nome: "Deadpool", genero: "acao", avaliacao: "4.5", imagem: "src/img2/baner-ação1.jpg" },
   { nome: "Batman", genero: "acao", avaliacao: "4.8", imagem: "src/img2/baner-ação2.jpg" },
   { nome: "Triplo X", genero: "acao", avaliacao: "5.0", imagem: "src/img2/baner-ação3.webp" },
@@ -38,7 +36,6 @@ const filmes = [
   { nome: "Doutor Estranho", genero: "acao", avaliacao: "4.9", imagem: "src/img2/baner-ação10.webp" },
 
   //terror
-
   { nome: "Invocação do Mal", genero: "terror", avaliacao: "4.9", imagem: "src/img4/baner-terror1.webp" },
   { nome: "Annabelle", genero: "terror", avaliacao: "4.7", imagem: "src/img4/baner-terror2.webp" },
   { nome: "It: A Coisa", genero: "terror", avaliacao: "4.8", imagem: "src/img4/baner-terror3.webp" },
@@ -49,14 +46,14 @@ const filmes = [
   { nome: "Corra!", genero: "terror", avaliacao: "4.9", imagem: "src/img4/baner-terror8.webp" },
   { nome: "Midsommar", genero: "terror", avaliacao: "4.7", imagem: "src/img4/baner-terror9.webp" },
   { nome: "A Morte do Demônio", genero: "terror", avaliacao: "4.6", imagem: "src/img4/baner-terror10.webp" }
-
 ];
 
-const pesquisa = document.querySelector(".pesquisa");
-const main = document.querySelector("main");
-
 const section = document.querySelector("section"); 
+const main = document.querySelector("main");
 const continueH1 = document.querySelector(".continue");
+const voltar = document.getElementById("voltar");
+
+voltar.style.display = "none";
 
 const mostrarFilmes = genero => {
   section.style.display = "none";
@@ -74,6 +71,7 @@ const mostrarFilmes = genero => {
   `).join("");
 
   main.innerHTML = lista;
+  voltar.style.display = "block";
 };
 
 const comedia = () => mostrarFilmes("comedia");
@@ -81,3 +79,9 @@ const romance = () => mostrarFilmes("romance");
 const acao = () => mostrarFilmes("acao");
 const terror = () => mostrarFilmes("terror");
 
+voltar.addEventListener("click", () => {
+  main.innerHTML = "";
+  section.style.display = "grid";
+  continueH1.style.display = "block";
+  voltar.style.display = "none";
+});
